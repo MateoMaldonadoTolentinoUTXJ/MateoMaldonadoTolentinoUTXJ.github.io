@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/dashboard.css" type="text/css">
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="menup"><h2 id="txttitlemenu">AUTOLavado</h2>
+        <img class="iconmenu" src="img/menu.png">
+        <br><br>
+        <ul>
+        <li><a href="home.html"><span class="i_home"></span>Inicio</a></li>
+        <li><a href="clientes.html"><span class="i_cliente"></span>Clientes</a></li>
+        <li><a href="vehiculos.html"><span class="i_trabajador"></span>Vehiculos</a></li>
+        <li><a href="servicios.html"><span class="i_servicio"></span>Servicios</a></li>
+        <li><a href="trabajadores.html"><span class="i_trabajador"></span>Trabajadores</a></li>
+        <li><a href="ventas.html"><span class="i_venta"></span>Ventas</a></li>
+        <li class="salir"><a href="#demo-modal"><span class="i_salir"></span>Salir</a></li>
+        </ul>
+    </div>
+
+    <div id="demo-modal" class="modal">
+        <div class="modal__content">
+            <h1>!</h1>
+            <p>
+                ¿Realmente desea salir?
+            </p>
+            <div class="modal__footer">
+                <button onclick="window.location.href='index.html'" type="button" class="btn btn-danger" data-dismiss="modal">Salir</button>
+                <button onclick="window.location.href='home.html'" type="button" class="btn btn-primary">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-body">
+                <div class="row">
+                    <!-- Cards -->
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card bg-c-blue order-card">
+                            <div class="card-block">
+                                <h6 class="m-b-20">Lista de Clientes</h6>
+                                <h2 class="text-right"><i class="i_cliente"></i><span>Clientes</span></h2>
+                                <p class="m-b-0">Total <span class="f-right">351</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card bg-c-green order-card">
+                            <div class="card-block">
+                                <h6 class="m-b-20">Lista de Servicios</h6>
+                                <h2 class="text-right"><i class="i_servicio"></i><span>Servicios</span></h2>
+                                <p class="m-b-0">Total <span class="f-right">7</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card bg-c-yellow order-card">
+                            <div class="card-block">
+                                <h6 class="m-b-20">Lista de Trabajadores</h6>
+                                <h2 class="text-right"><i class="i_trabajador"></i><span>Trabajadores</span></h2>
+                                <p class="m-b-0">Total <span class="f-right">3292</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card bg-c-pink order-card">
+                            <div class="card-block">
+                                <h6 class="m-b-20">Iniciar Venta</h6>
+                                <h2 class="text-right"><i class="i_venta"></i><span>Ventas</span></h2>
+                                <p class="m-b-0">Total mensual <span class="f-right">842</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tablas -->
+                    <div class="col-lg-8 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Estadisticas</h5>
+                                <div class="card-header-right">
+                                    <ul class="list-unstyled card-option">
+                                        <li><i class=""></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-block">
+                                <span class="estadisticas"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Comentarios</h5>
+                            </div>
+                            <div class="card-block">
+                                <span class="d-block text-c-blue text-center">6547</span>
+                                <br>                                
+                                <div class="row justify-content-center m-t-15">
+                                    <div class="col-auto b-r-default m-t-5 m-b-5">
+                                        <h4>83%</h4>
+                                        <p class="text-success m-b-0"><i class="ti-hand-point-up m-r-5"></i>Positivos</p>
+                                    </div>
+                                    <div class="col-auto m-t-5 m-b-5">
+                                        <h4>17%</h4>
+                                        <p class="text-danger m-b-0"><i class="ti-hand-point-down m-r-5"></i>Negativos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>            
+    </div>
+</body>
+</html>

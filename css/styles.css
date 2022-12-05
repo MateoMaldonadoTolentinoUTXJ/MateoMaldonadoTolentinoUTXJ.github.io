@@ -1,0 +1,114 @@
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+body{
+    background: url(../img/fondo.webp);
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.ftco-section {
+    padding: 7em 0;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.justify-content-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+.col-md-7, .col-lg-5{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.login-wrap {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 10px 30px 40px -5px rgb(0, 0, 0);
+}
+.p-4 {
+    padding: 1.5rem !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+.w-50 {
+    width: 50% !important;
+}
+
+@media (min-width: 576px) {
+    .col-sm-12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }    
+}
+@media (min-width: 768px) {
+    .p-md-5 {
+        padding: 3rem !important;
+    }
+    .d-md-flex {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+    .text-md-right {
+        text-align: right !important;
+    }
+    .col-md-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media only screen and (max-width: 786px) {
+    #main-chat .page-body,
+    .full-calender .page-body {
+      display: none;
+    } 
+}
+@media (min-width: 1200px) {
+    .col-xl-3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+
+    

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/dashboard.css" type="text/css">
+    <title>Ventas</title>
+</head>
+<body>
+    <div class="menup"><h2 id="txttitlemenu">AUTOLavado</h2>
+        <img class="iconmenu" src="img/menu.png">
+        <br><br>
+        <ul>
+        <li><a href="home.html"><span class="i_home"></span>Inicio</a></li>
+        <li><a href="clientes.html"><span class="i_cliente"></span>Clientes</a></li>
+        <li><a href="vehiculos.html"><span class="i_trabajador"></span>Vehiculos</a></li>
+        <li><a href="servicios.html"><span class="i_servicio"></span>Servicios</a></li>
+        <li><a href="trabajadores.html"><span class="i_trabajador"></span>Trabajadores</a></li>
+        <li><a href="ventas.html"><span class="i_venta"></span>Ventas</a></li>
+        <li class="salir"><a href="#demo-modal"><span class="i_salir"></span>Salir</a></li>
+        </ul>
+    </div>
+
+    <div id="demo-modal" class="modal">
+        <div class="modal__content">
+            <h1>!</h1>
+            <p>
+                ¿Realmente desea salir?
+            </p>
+            <div class="modal__footer">
+                <button onclick="window.location.href='index.html'" type="button" class="btn btn-danger" data-dismiss="modal">Salir</button>
+                <button onclick="window.location.href='ventas.html'" type="button" class="btn btn-primary">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Realizar Venta</h4>
+                                <p class="card-description">Ingrese los datos para realizar una venta</p>
+                                <form>
+                                    <div class="form-group row">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Servicio">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" placeholder="Trabajador">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Vehiculo">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary mr-2">Agregar</button>
+                                    <button class="btn btn-danger">Cancelar</button>
+                                </form>
+                            </div>
+                        </div>                                  
+                    </div>                   
+                </div>
+
+                <!-- Tabla -->
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Ventas</h5>
+                        <span>Listado de Ventas</span>
+                        <div class="card-header-right">
+                            <ul class="list-unstyled card-option">
+                                <li><i class="fa fa-chevron-left"></i></li>
+                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                <li><i class="fa fa-times close-card"></i></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="card-block table-border-style">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Servicio</th>
+                                        <th>Trabajador</th>
+                                        <th>Vehiculo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-active">
+                                        <th scope="row">1</th>
+                                        <td>Lavado</td>
+                                        <td>043</td>
+                                        <td>GRF-24-AD4</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Lavado de motor</td>
+                                        <td>014</td>
+                                        <td>EFA-23-BE3</td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <th scope="row">3</th>
+                                        <td>Encerado</td>
+                                        <td>014</td>
+                                        <td>RYN-23-CD8</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Encerado premium</td>
+                                        <td>014</td>
+                                        <td>MND-27-MH5</td>
+                                    </tr>
+                                    <tr class="table-warning">
+                                        <th scope="row">5</th>
+                                        <td>Pulido sencillo</td>
+                                        <td>014</td>
+                                        <td>LAK-96-ATY</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Pulido premium</td>
+                                        <td>043</td>
+                                        <td>NRE-01-CD8</td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <th scope="row">9</th>
+                                        <td>Servivio completo</td>
+                                        <td>014</td>
+                                        <td>M0N-3Y-M3!</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
